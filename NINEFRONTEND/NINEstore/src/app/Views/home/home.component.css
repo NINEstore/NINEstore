@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap%27);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    color: #000000;
+    max-width: 1200px;
+    font-family:Kanit, sans-serif
+}
+
+header{
+    background-color: #1c1c19;
+    color: white;
+    margin: -8px;
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    height: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+header[id=header2]{
+    background-color: white;
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+#logo{
+    margin-top: -40px;
+    margin-left: 610px;
+}
+
+ul{
+    margin-top: 4px;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 3px;
+    font-size: 30px;
+}
+
+a{
+    color: #1c1c19;
+}
+
+a:hover{
+   color: rgb(236, 25, 148);
+   transition: 0.6s all;
+}
+
+hr{
+    position:fixed;
+    margin-top:80px;
+    margin-left: -10px;
+    z-index:12;
+    height: 0px;
+    width: 100%;
+    background-color: #1c1c19;
+}
+
+main{
+    margin-top: 80px;
+}
+
+.products{
+    margin-left: 125px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    position: relative;
+    z-index:1;
+    margin: 0px;
+    text-align: center;
+    font-family: arial;
+    display: inline-table;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button{
+    border-radius: 7px;
+    background-color: #7e7a7a1d;
+    position:absolute;
+    z-index: 10;
+    left: 255px;
+    width:30px;               /* largura para o botão */
+    height:30px;              /* altura para o botão */
+    margin-top: -335px;   /* margem à esquerda e ao topo metade da medida do botão */
+    border:0 none;
+}
+
+.card button img{
+    opacity: 50%;
+}
+
+.card button:hover{
+    width: 35px;
+    height: 35px;
+    background-color: #7e7a7a1d;
+    transition: 0.1s;
+}
+
+.card button:hover img{
+    transform: scale(1.1);
+    transition: 0.1s;
+    opacity: 100%;
+}
+
+.cartadd{
+    margin-top: 3px;
+}
+
+footer{
+  font-size: 10px;
+  background-color: #1c1c19;
+  color: white;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-top: 150px;
+}
+
+.search-box{
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  padding-right: 40px;
+  color:#1c1c19;
+}
+.input-search::placeholder{
+  color:#1c1c19;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#1c1c19 ;
+  background-color:transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid #1c1c19;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid #1c1c19;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
